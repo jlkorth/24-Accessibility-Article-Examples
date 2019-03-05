@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pCA-BI-9GZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pCA-BI-9GZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,6 +62,9 @@
                                             <constraint firstAttribute="width" constant="50" id="Wd8-kV-An0"/>
                                         </constraints>
                                         <state key="normal" image="Img201059"/>
+                                        <connections>
+                                            <action selector="openTwitter" destination="syH-mn-oat" eventType="touchUpInside" id="yap-ye-ZUD"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWz-my-GVe">
                                         <rect key="frame" x="20" y="373" width="335" height="20.5"/>
@@ -73,7 +76,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syH-mn-oat" customClass="TwitterLink" customModule="_4A11y_Article" customModuleProvider="target">
-                                        <rect key="frame" x="162" y="431.5" width="50" height="50"/>
+                                        <rect key="frame" x="162.5" y="431.5" width="50" height="50"/>
                                         <accessibility key="accessibilityConfiguration" label="DQ Systems Twitter Page">
                                             <accessibilityTraits key="traits" link="YES"/>
                                         </accessibility>
@@ -82,6 +85,9 @@
                                             <constraint firstAttribute="width" secondItem="syH-mn-oat" secondAttribute="height" multiplier="1:1" id="mhI-tW-yp5"/>
                                         </constraints>
                                         <state key="normal" image="Img201059"/>
+                                        <connections>
+                                            <action selector="openTwitter" destination="eqG-Fi-rmo" eventType="touchUpInside" id="Kik-zA-AHu"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Link now has a name." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqU-t6-eC7">
                                         <rect key="frame" x="20" y="403.5" width="335" height="18"/>
@@ -179,14 +185,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIR-Yk-VAw">
-                                        <rect key="frame" x="20" y="325.5" width="335" height="98"/>
+                                        <rect key="frame" x="20" y="325" width="335" height="98"/>
                                         <string key="text">Just because the Label is repeated information for VoiceOver users does not mean that it should not be focusable by VoiceOver! Sighted VoiceOver users will be confused as to why they cannot focus the Label.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Example" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5h-um-pxU">
-                                        <rect key="frame" x="20" y="453.5" width="335" height="20.5"/>
+                                        <rect key="frame" x="20" y="453" width="335" height="20.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -195,7 +201,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The name and control are now combined into one focusable container.  No missing information, and no repeated information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSw-gP-UYk">
-                                        <rect key="frame" x="20" y="545" width="335" height="58"/>
+                                        <rect key="frame" x="20" y="544.5" width="335" height="58"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -204,7 +210,7 @@
                                         <rect key="frame" x="5" y="84.5" width="365" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Theme" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xv-Z2-Pfg">
-                                                <rect key="frame" x="10" y="16" width="286" height="20.5"/>
+                                                <rect key="frame" x="10" y="15.5" width="286" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -237,7 +243,7 @@
                                         <rect key="frame" x="5" y="264" width="365" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Theme" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-rr-er4">
-                                                <rect key="frame" x="10" y="16" width="286" height="20.5"/>
+                                                <rect key="frame" x="10" y="15.5" width="286" height="20.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -270,7 +276,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glw-vA-rTt" customClass="AccessibleSwitchView" customModule="_4A11y_Article" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="484" width="365" height="51"/>
+                                        <rect key="frame" x="5" y="483.5" width="365" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Theme" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVT-Au-zfN">
                                                 <rect key="frame" x="10" y="15.5" width="286" height="20.5"/>
